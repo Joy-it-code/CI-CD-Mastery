@@ -163,6 +163,7 @@ Click Save and Build Now.
 
 ![](./img/8a.index.file.png)
 
+
 ### 4.2: Create a Dockerfile
 
 + In the same directory as your index.html file, create a file named Dockerfile with the following content:
@@ -172,20 +173,59 @@ FROM nginx:alpine
 COPY index.html /usr/share/nginx/html/
 EXPOSE 80
 ```
+![](./img/8b.docker.file.png)
+
 
 ### Step 4.3: Push Your Code to GitHub
 
 ### Run the following Git commands in your project directory:
 
 ```
-git init
 git add .
 git commit -m "Initial commit - Simple web application"
-git branch -M main
-git remote add origin https://github.com/Joy-it-code/CI-CD-Mastery.git
-git push -u origin main
+git push origin main
 ```
 
+Step 4.4: Set Up Jenkins Pipeline to Build Docker Image
+
++ Install Docker on Your EC2 Instance:
+
+```
+sudo apt update
+sudo apt install docker.io -y
+sudo usermod -aG docker $USER
+newgrp docker
+docker --version
+```
++ Enable Docker to start on boot:
+
+```
+sudo systemctl enable docker
+sudo systemctl start docker
+```
+
++ Add Jenkins User to Docker Group:
+
+```
+sudo usermod -aG docker jenkins
+sudo systemctl restart jenkins
+```
+
+### Step 4.5: Docker Image Creation and Push to Dockerhub
+
++ Log into Dockerhub, visit htttps://hub.docker.com/
+
++ Create a New Repository
+
++ Click Create Repository.
+
++ Repository Name: jenkins-pipeline/webapp.
+
++ Visibily: Public (free and easy to access)
+
++ Click Create.
+
+![](./img/9.docker.repo.png)
 
 
 
