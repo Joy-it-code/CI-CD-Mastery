@@ -173,6 +173,7 @@ COPY index.html /usr/share/nginx/html/
 EXPOSE 80
 ```
 
+### Step 4.3: Push Your Code to GitHub
 
 ### Run the following Git commands in your project directory:
 
