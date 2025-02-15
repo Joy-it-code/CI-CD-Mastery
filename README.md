@@ -355,7 +355,7 @@ After the pipeline deploys your container:
 ```
 git add .
 git commit -m "updated file"
-git push origin main
+git push
 ```
 
 ### Expected Outcome:
