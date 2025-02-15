@@ -382,8 +382,6 @@ This pipeline streamlines the development lifecycle by integrating Docker and Je
 
 **Joy** – *Striving DevOps Engineer*
 
-### 🔗 GitHub Repository: [Joy-it-code/CI-CD-Mastery] [https://github.com/Joy-it-code/CI-CD-Mastery]
+### 🔗 GitHub Repository: Joy-it-code/CI-CD-Mastery 
 
----
- 
  **🌟 Delighted Acquiring 🚀** 
