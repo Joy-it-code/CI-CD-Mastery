@@ -63,7 +63,7 @@ sudo systemctl status jenkins
 + Install Git Plugin
 ![](./img/5e.git.plugins.png)
 
-+ Install Docker
++ Install Docker and Docker plugins
 ![](./img/5f.docker.installation.png)
 
 
