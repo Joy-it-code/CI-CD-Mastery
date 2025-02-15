@@ -53,9 +53,9 @@ sudo systemctl status jenkins
 
 ### Security Measures Were Put In Place: 
 
-Install plugins like Role-based Authorization Strategy for access control.
-Set up firewall rules properly (avoid open ports to the world).
-Enable authentication for builds.
++ Install plugins like Role-based Authorization Strategy for access control.
++ Set up firewall rules properly (avoid open ports to the world).
++ Enable authentication for builds.
 
 
 ## Step 2: Source Code Management Repository Integration
