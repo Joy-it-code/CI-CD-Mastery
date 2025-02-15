@@ -310,7 +310,7 @@ credentials (unrestricted).
 + In the Add Credentials form, fill in the fields
 + Click OK to save.
 ![](./img/10a.add.credential.png)
-
+![](./img/10a.add.credential2.png)
 
 ## Step 5.3: Create a Pipeline Job in Jenkins:
 
