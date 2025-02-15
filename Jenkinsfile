@@ -23,15 +23,19 @@ pipeline {
 
         stage('Push Docker Image') {
             steps {
-                withDockerRegistry([credentialsId: env.DOCKER_CREDENTIALS_ID, url: '']) {
-                    sh 'docker push $DOCKER_IMAGE'
+                
+                script {
+                    docker.withRegistry('', 'mitchel-2017') {
+                      sh 'docker push $DOCKER_IMAGE'
+                    }
                 }
+ 
             }
         }
 
         stage('Deploy Container Locally') {
             steps {
-                sh 'docker run -d -p 8080:80 $DOCKER_IMAGE'
+                sh 'docker run -d -p 8090:80 $DOCKER_IMAGE'
             }
         }
     }
@@ -45,4 +49,4 @@ pipeline {
         }
     }
 }
-          
+
